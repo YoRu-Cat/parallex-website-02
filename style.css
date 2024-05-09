@@ -90,7 +90,7 @@ header ul a {
 .hamburger .bar::after {
   top: 4.5px;
 }
-
+/* convert width and height into percent from px by dividing by screen width and multiply by 100 for further responsive ness */
 main {
   /* background: #353; */
   position: relative;
@@ -289,6 +289,10 @@ main {
   }
 }
 @media (max-width: 725px) {
+  /* add each image these properties 
+  width: initial;
+  height: (previous width (in percent) ) * 1.6;
+  */
   .text h1 {
     font-size: 5rem !important;
     line-height: 1.1;
